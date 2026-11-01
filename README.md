@@ -6,7 +6,7 @@ Multi-tenant marketplace database portfolio covering MongoDB schemas, query opti
 ## System Overview
 Alate operates as a **Modular Monolith** backend attached to a shared **MongoDB** instance and **Redis** operational cache. Multi-tenancy is enforced logically using mandatory `vendorId` context in all data access layers.
 
-- **Repository:** https://github.com/your-username/alate-multi-tenant-marketplace
+- **Repository:** https://github.com/your-username/alate-multi-tenant-marketplace-repo
 - **Architecture Type:** Modular Monolith with Shared Collection Tenant Isolation
 - **Primary Data Engine:** MongoDB v7.0 + Redis v7.2
 
@@ -38,4 +38,4 @@ Alate operates as a **Modular Monolith** backend attached to a shared **MongoDB*
 ### Portfolio 5: Distributed & Cloud Strategy
 - **Implementation:** Ranged Compound Shard Key `{ vendorId: 1, _id: 1 }` to eliminate scatter-gather queries.
 - **High Availability:** 3-node replica set with cross-region passive secondary for DR (RTO < 30s, RPO ≈ 0).
-- **Artifact:** `portfolio-5-distributed-cloud/sharding_config.js`
+- **Artifact:** `portfolio-5-distributed-cloud/sharding_config.js'
